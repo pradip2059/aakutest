@@ -1,0 +1,226 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:#0a0f12;color:#f4f7f6;font-family:Inter,Arial,sans-serif;line-height:1.65;overflow-x:hidden}a{color:inherit;text-decoration:none}.nav{position:fixed;z-index:50;top:0;left:0;right:0;background:rgba(10,15,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.nav-inner{max-width:1220px;margin:auto;height:72px;padding:0 26px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.brand-mark{width:37px;height:37px;display:grid;place-items:center;border-radius:10px;background:#12b999;color:#07110f;font-size:.86rem}.links{display:flex;align-items:center;gap:7px}.links a{padding:7px 10px;color:#aebbb8;font-size:.86rem;font-weight:700;border-radius:9px}.links a:hover,.links a.active{color:#07110f;background:#12b999}.resume-nav{border:1px solid #2d3b39!important;color:#f3f7f6!important}.menu{display:none;background:none;border:0;color:white;font-size:1.4rem}.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 72% 42%,rgba(18,185,153,.07),transparent 28%),#0a0f12}.hero-inner{width:min(1180px,calc(100% - 52px));margin:auto;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:80px;padding:120px 0 70px;position:relative;z-index:2}.status{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid #273532;border-radius:99px;background:#121a1d;color:#c7d3d0;font-size:.78rem;font-weight:800}.status span{width:8px;height:8px;border-radius:50%;background:#12b999;box-shadow:0 0 15px #12b999}.eyebrow{color:#12b999;font-weight:800;letter-spacing:.16em;font-size:.76rem}.hero h1{font:800 clamp(4.1rem,8vw,7rem)/.86 Manrope,sans-serif;letter-spacing:-.07em;margin:18px 0 27px}.hero h1 span,.section-head span,.contact h2 span{color:#12b999}.hero h2{font:700 clamp(1.6rem,3vw,2.55rem)/1.14 Manrope,sans-serif;max-width:690px;margin:0 0 22px;color:#e9efed}.hero h2 em{font-style:normal;color:#d7ad55}.intro{color:#aab6b3;max-width:650px;font-size:1.02rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 20px;border-radius:9px;font-weight:800;font-size:.88rem;border:1px solid #33423f;transition:.2s}.btn:hover{transform:translateY(-3px)}.primary{background:#12b999;color:#06100e;border-color:#12b999}.secondary{background:#11191b}.quick{display:flex;gap:35px;margin-top:42px;padding-top:24px;border-top:1px solid #22302d}.quick div{display:flex;flex-direction:column}.quick strong{font:800 1.1rem Manrope}.quick span{font-size:.74rem;color:#7f918d}.hero-photo-wrap{position:relative;min-height:560px;display:grid;place-items:center}.photo-card{width:min(390px,80vw);aspect-ratio:1/1.16;border-radius:42% 42% 30% 30%;overflow:hidden;position:relative;z-index:2;border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 90px rgba(0,0,0,.48)}.photo-card img{width:100%;height:100%;object-fit:cover;object-position:center 20%}.orbit{position:absolute;width:440px;height:440px;border:1px solid rgba(18,185,153,.24);border-radius:50%;z-index:1}.float-tag{position:absolute;z-index:3;background:#121a1d;border:1px solid #31403d;padding:8px 13px;border-radius:99px;font-weight:800;font-size:.75rem;box-shadow:0 12px 30px rgba(0,0,0,.25)}.tag1{top:18%;right:2%}.tag2{bottom:18%;left:2%}.tag3{bottom:7%;right:14%;color:#d7ad55}.glow{position:absolute;border-radius:50%;filter:blur(70px);opacity:.38}.glow-one{width:230px;height:230px;background:#12b999;right:8%;top:22%}.glow-two{width:170px;height:170px;background:#d7ad55;right:28%;bottom:12%;opacity:.2}.glow-three{width:160px;height:160px;background:#176f66;left:2%;top:30%;opacity:.15}.section{max-width:1220px;margin:auto;padding:110px 28px}.tint{max-width:none;padding-left:max(28px,calc((100% - 1164px)/2));padding-right:max(28px,calc((100% - 1164px)/2));background:#0d1417}.section-head{margin-bottom:46px}.section-head>p{color:#12b999;font-size:.73rem;font-weight:800;letter-spacing:.17em}.section-head h2{font:800 clamp(2.6rem,5vw,4.3rem)/1.02 Manrope;margin:10px 0;letter-spacing:-.055em}.about-grid,.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card,.job,.project,.skill,.contact-box{border:1px solid #23312f;background:#101719;border-radius:20px;transition:transform .22s,border-color .22s,box-shadow .22s}.card{padding:30px}.card h3,.project h3,.skill h3,.job h3{font-family:Manrope;margin:0 0 10px}.card p,.project p,.skill p,.job p,.job li{color:#9eadaa}.card .big{font-size:1.25rem;color:#f3f7f6;font-weight:800}.meta{display:flex;justify-content:space-between;gap:15px;color:#d7ad55;font-size:.82rem;margin-top:26px}.timeline{display:grid;gap:16px}.job{padding:30px}.job-top{display:flex;justify-content:space-between;gap:30px}.job-top h3{font-size:1.35rem}.job-top p{margin:0}.job time{color:#d7ad55;font-size:.82rem;font-weight:700;white-space:nowrap}.num{color:#12b999;font-size:.7rem;font-weight:900;letter-spacing:.12em}.job ul,.project ul{padding-left:19px;margin-bottom:0}.project{padding:32px}.project-icon{width:58px;height:58px;border-radius:15px;display:grid;place-items:center;background:#12312c;color:#31d0b1;font-weight:900;margin-bottom:25px}.project .label{font-size:.7rem;letter-spacing:.15em;color:#d7ad55;font-weight:800}.project h3{font-size:1.55rem}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.tags span{font-size:.7rem;font-weight:800;padding:6px 9px;border-radius:99px;background:#15221f;color:#91d8ca}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill{padding:28px}.skill>span{color:#12b999;font-weight:900;font-size:.72rem}.skill h3{margin-top:20px}.honor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.award{font:800 1.8rem Manrope;color:#d7ad55;margin-bottom:18px}.card small{color:#71817d}.contact{padding-bottom:90px}.contact-box{padding:58px;background:radial-gradient(circle at 90% 10%,rgba(18,185,153,.14),transparent 30%),#101719}.contact h2{font:800 clamp(2.8rem,6vw,5rem)/.98 Manrope;margin:12px 0 20px;letter-spacing:-.06em}.contact>p,.contact-box>p:not(.eyebrow){max-width:700px;color:#9eadaa}.contact-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:38px;padding-top:22px;border-top:1px solid #273431;color:#8fa09c;font-size:.82rem}footer{max-width:1164px;margin:auto;padding:30px 28px 45px;border-top:1px solid #1e2927;display:flex;justify-content:space-between;color:#6f807c;font-size:.78rem}footer span{font-weight:900;color:#12b999}.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}@media(hover:hover){.card:hover,.job:hover,.project:hover,.skill:hover,.contact-box:hover{transform:translateY(-5px);border-color:#356159;box-shadow:0 16px 38px rgba(0,0,0,.25)}}@media(max-width:900px){.menu{display:block}.links{display:none;position:absolute;top:72px;left:0;right:0;background:#0c1214;padding:15px;flex-direction:column;align-items:stretch;border-bottom:1px solid #26322f}.links.open{display:flex}.links a{text-align:center}.hero-inner{grid-template-columns:1fr;gap:25px}.hero-copy{order:1}.hero-photo-wrap{order:0;min-height:420px}.photo-card{width:min(320px,78vw)}.orbit{width:350px;height:350px}.about-grid,.project-grid,.skill-grid,.honor-grid{grid-template-columns:1fr}.job-top{flex-direction:column;gap:5px}.section,.tint{padding-left:18px;padding-right:18px}.hero h1{font-size:clamp(3.8rem,18vw,6rem)}.hero-inner{width:calc(100% - 36px);padding-top:105px}.float-tag{font-size:.68rem}.quick{gap:18px;justify-content:space-between}}@media(max-width:520px){.nav-inner{padding:0 15px}.brand>span:last-child{display:none}.hero-photo-wrap{min-height:360px}.photo-card{width:270px}.orbit{width:300px;height:300px}.hero h1{font-size:3.7rem}.hero h2{font-size:1.55rem}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.quick strong{font-size:.95rem}.quick span{font-size:.64rem}.section{padding-top:82px;padding-bottom:82px}.card,.job,.project,.skill{padding:22px}.contact-box{padding:32px 22px}.actions .btn{flex:1 1 100%;text-align:center}.meta{flex-direction:column}.tag1{right:0}.tag2{left:0}.tag3{right:2%}}
+
+/* =========================================================
+   LIQUID GLASS TEST — AAKANSHYA
+   Preserves the original charcoal / emerald / gold identity.
+   ========================================================= */
+
+:root{
+  --at-glass:rgba(20,31,32,.42);
+  --at-glass-soft:rgba(16,26,28,.30);
+  --at-glass-edge:rgba(177,224,214,.14);
+  --at-glass-highlight:rgba(255,255,255,.08);
+  --at-emerald:#12b999;
+  --at-gold:#d7ad55;
+}
+
+/* Layered ambient background instead of changing her palette */
+body{
+  background:
+    radial-gradient(circle at 84% 13%,rgba(18,185,153,.11),transparent 29%),
+    radial-gradient(circle at 14% 43%,rgba(215,173,85,.055),transparent 25%),
+    linear-gradient(145deg,#080d0f 0%,#0a1113 48%,#07100f 100%);
+  background-attachment:fixed;
+}
+.hero{
+  background:
+    radial-gradient(circle at 72% 42%,rgba(18,185,153,.10),transparent 29%),
+    transparent;
+}
+
+/* Floating liquid-glass navbar */
+.nav{
+  top:12px;
+  left:16px;
+  right:16px;
+  border:1px solid rgba(181,226,217,.13);
+  border-radius:24px;
+  background:
+    linear-gradient(145deg,rgba(31,47,48,.55),rgba(12,23,25,.37));
+  backdrop-filter:blur(28px) saturate(170%);
+  -webkit-backdrop-filter:blur(28px) saturate(170%);
+  box-shadow:
+    0 14px 42px rgba(0,0,0,.27),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  overflow:visible;
+}
+.nav-inner{height:62px;position:relative;z-index:2}
+.brand-mark{
+  background:linear-gradient(145deg,rgba(32,215,177,.96),rgba(14,159,132,.90));
+  box-shadow:0 7px 20px rgba(18,185,153,.20),inset 0 1px 0 rgba(255,255,255,.24)
+}
+.links{position:relative}
+.links a{
+  position:relative;
+  z-index:3;
+  border:1px solid transparent;
+  transition:color .2s ease,background .22s ease,border-color .22s ease,transform .22s ease;
+}
+.links a:hover{
+  color:#effbf8;
+  background:rgba(74,119,110,.18);
+  border-color:rgba(174,225,214,.12);
+}
+.resume-nav{
+  background:rgba(23,37,38,.32)!important;
+  border-color:rgba(178,220,212,.16)!important;
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+
+/* Shared moving emerald liquid pill */
+.at-liquid-indicator{
+  --at-x:0px;
+  --at-y:0px;
+  position:absolute;
+  left:0;top:0;
+  z-index:1;
+  opacity:0;
+  pointer-events:none;
+  transform:translate3d(var(--at-x),var(--at-y),0);
+  border-radius:10px;
+  background:
+    linear-gradient(135deg,rgba(38,211,177,.95),rgba(13,158,131,.88));
+  border:1px solid rgba(180,255,239,.38);
+  box-shadow:
+    0 8px 22px rgba(18,185,153,.20),
+    inset 0 1px 0 rgba(255,255,255,.25);
+  backdrop-filter:blur(18px) saturate(175%);
+  -webkit-backdrop-filter:blur(18px) saturate(175%);
+  transition:
+    transform 520ms cubic-bezier(.16,1,.3,1),
+    width 520ms cubic-bezier(.16,1,.3,1),
+    height 520ms cubic-bezier(.16,1,.3,1),
+    opacity 140ms ease;
+  will-change:transform,width,height;
+}
+.at-liquid-indicator.visible{opacity:1}
+.at-liquid-indicator.no-motion{transition:none!important}
+.nav.indicator-ready .links a[href^="#"].active,
+.nav.indicator-ready .links a[href^="#"].active:hover{
+  background:transparent!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+  color:#07110f;
+}
+
+/* Liquid glass surfaces — same emerald/gold theme */
+.status,.float-tag,.card,.job,.project,.skill,.contact-box{
+  background:
+    linear-gradient(145deg,rgba(29,45,46,.43),rgba(12,24,26,.29),rgba(28,47,45,.35));
+  border-color:var(--at-glass-edge);
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.20),
+    inset 0 1px 0 var(--at-glass-highlight);
+}
+.status{
+  background:linear-gradient(145deg,rgba(37,61,59,.45),rgba(14,28,29,.30));
+  border-color:rgba(172,224,213,.16)
+}
+.float-tag{
+  background:linear-gradient(145deg,rgba(35,54,54,.55),rgba(13,26,28,.40));
+  border-color:rgba(174,222,213,.18);
+  box-shadow:0 12px 30px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.08)
+}
+.photo-card{
+  border-color:rgba(212,242,235,.18);
+  box-shadow:0 30px 90px rgba(0,0,0,.43),inset 0 1px 0 rgba(255,255,255,.08)
+}
+.btn{
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+}
+.btn.secondary{
+  background:linear-gradient(145deg,rgba(35,51,52,.44),rgba(13,26,28,.30));
+  border-color:rgba(177,220,211,.17);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07)
+}
+.primary{
+  background:linear-gradient(145deg,rgba(39,213,179,.98),rgba(14,164,136,.94));
+  box-shadow:0 10px 28px rgba(18,185,153,.18),inset 0 1px 0 rgba(255,255,255,.22)
+}
+.project-icon,.tags span{
+  background:rgba(21,65,56,.40);
+  border:1px solid rgba(84,211,184,.10);
+  backdrop-filter:blur(12px);
+}
+
+/* Alternating depth without replacing her dark theme */
+.tint{
+  background:
+    linear-gradient(135deg,rgba(22,48,45,.31),rgba(12,27,29,.23),rgba(31,48,43,.26));
+  border-top:1px solid rgba(79,170,151,.08);
+  border-bottom:1px solid rgba(79,170,151,.08);
+  backdrop-filter:blur(5px) saturate(110%);
+  -webkit-backdrop-filter:blur(5px) saturate(110%);
+}
+.contact-box{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(18,185,153,.15),transparent 31%),
+    linear-gradient(145deg,rgba(30,47,47,.44),rgba(12,24,26,.29));
+}
+
+/* Slightly more premium hover, same behavior */
+@media(hover:hover){
+  .card:hover,.job:hover,.project:hover,.skill:hover,.contact-box:hover{
+    transform:translateY(-6px) scale(1.004);
+    border-color:rgba(86,203,179,.27);
+    box-shadow:0 20px 48px rgba(0,0,0,.27),inset 0 1px 0 rgba(255,255,255,.09)
+  }
+}
+
+/* Tablet: keep desktop glass bar but prevent label wrapping */
+@media (min-width:901px) and (max-width:1100px){
+  .nav-inner{padding-left:12px;padding-right:12px;gap:10px}
+  .brand>span:last-child{display:none}
+  .links{gap:4px;flex:1 1 auto;justify-content:flex-end;min-width:0}
+  .links a{
+    white-space:nowrap;
+    word-break:normal;
+    overflow-wrap:normal;
+    font-size:.77rem;
+    padding:7px 7px;
+  }
+}
+
+/* Mobile: preserve her menu concept, but make it proper opaque liquid glass */
+@media(max-width:900px){
+  .nav{z-index:1000;overflow:visible}
+  .nav-inner{height:62px}
+  .links{
+    top:70px;
+    left:0;right:0;
+    max-height:calc(100dvh - 100px);
+    overflow-y:auto;
+    padding:13px;
+    gap:7px;
+    border:1px solid rgba(174,224,213,.18);
+    border-radius:21px;
+    background:
+      linear-gradient(145deg,rgba(12,25,27,.975),rgba(12,35,33,.97),rgba(9,22,24,.975));
+    backdrop-filter:blur(30px) saturate(155%);
+    -webkit-backdrop-filter:blur(30px) saturate(155%);
+    box-shadow:0 24px 60px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.07);
+  }
+  .links a{
+    min-height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:13px;
+    background:rgba(45,71,68,.17);
+    border:1px solid rgba(167,217,207,.08);
+  }
+  .links a.active{
+    background:linear-gradient(145deg,rgba(35,205,171,.96),rgba(14,161,134,.92))!important;
+    color:#06110e!important;
+    border-color:rgba(184,255,240,.26)!important;
+  }
+  .at-liquid-indicator{display:none!important}
+  .nav.indicator-ready .links a[href^="#"].active{background:linear-gradient(145deg,rgba(35,205,171,.96),rgba(14,161,134,.92))!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .at-liquid-indicator{transition:opacity 120ms ease}
+}
