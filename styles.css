@@ -397,3 +397,26 @@ body{
     text-shadow:none !important;
   }
 }
+
+
+/* =========================================================
+   TEST v6 — CENTER ACTIVE LABEL INSIDE LIQUID PILL
+   ========================================================= */
+@media (min-width:901px){
+  .links a[href^="#"]{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    line-height:1 !important;
+    box-sizing:border-box !important;
+  }
+
+  .nav.indicator-ready .links a[href^="#"].active{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    line-height:1 !important;
+  }
+}
