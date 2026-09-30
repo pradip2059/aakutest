@@ -1,12 +1,11 @@
-# Aakanshya Portfolio — Clean Liquid Nav TEST v3
+# Aakanshya Portfolio — Clean Liquid Nav TEST v4 FIXED
 
-Based on the latest Aakanshya liquid-glass build.
+Fixes the missing green navigator from TEST v3.
 
-- Restores the emerald moving active-section bar/pill.
-- Uses the same clean-nav concept as Pradip V18.4: text only at rest.
-- Subtle emerald glass capsule appears only on hover/focus.
-- Active emerald pill uses the smooth 520 ms liquid glide.
-- Resume remains an outlined action button.
-- Existing charcoal / emerald / gold theme preserved.
-- Mobile behavior preserved.
-- TEST ONLY: CNAME/canonical/sitemap removed; noindex/nofollow enabled.
+Root cause fixed:
+- Removed Pradip-specific `topnav` / `nav` JavaScript references.
+- Uses Aakanshya's actual `navBar` / `navLinks` variables.
+- Uses the `visible` class expected by Aakanshya's CSS.
+- Keeps the 520 ms liquid sliding movement.
+- Clean text at rest and emerald hover glass remain.
+- Test-only; production domain untouched.

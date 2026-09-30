@@ -12,79 +12,72 @@ const sections=[...document.querySelectorAll("main section[id]")];
 const navLinks=[...document.querySelectorAll(".links a[href^='#']")];
 const navBar=document.querySelector(".nav");
 
-const liquidIndicator=document.createElement('span');
-liquidIndicator.className='at-liquid-indicator';
-liquidIndicator.setAttribute('aria-hidden','true');
-topnav?.appendChild(liquidIndicator);
+const liquidIndicator=document.createElement("span");
+liquidIndicator.className="at-liquid-indicator";
+liquidIndicator.setAttribute("aria-hidden","true");
+navBar?.appendChild(liquidIndicator);
 
-let indicatorReady=false;
 function positionLiquidIndicator(link, instant=false){
-  if(!topnav || !link || window.innerWidth<=900){
-    liquidIndicator.classList.remove('is-visible');
-    topnav?.classList.remove('indicator-ready');
-    indicatorReady=false;
+  if(!navBar || !link || window.innerWidth<=900){
+    liquidIndicator.classList.remove("visible");
+    navBar?.classList.remove("indicator-ready");
     return;
   }
 
-  const navRect=topnav.getBoundingClientRect();
+  const navRect=navBar.getBoundingClientRect();
   const linkRect=link.getBoundingClientRect();
 
-  if(instant) liquidIndicator.classList.add('no-motion');
+  if(instant) liquidIndicator.classList.add("no-motion");
 
-  liquidIndicator.style.setProperty('--indicator-x', `${linkRect.left-navRect.left}px`);
-  liquidIndicator.style.setProperty('--indicator-y', `${linkRect.top-navRect.top}px`);
+  liquidIndicator.style.setProperty("--at-x",`${linkRect.left-navRect.left}px`);
+  liquidIndicator.style.setProperty("--at-y",`${linkRect.top-navRect.top}px`);
   liquidIndicator.style.width=`${linkRect.width}px`;
   liquidIndicator.style.height=`${linkRect.height}px`;
-  liquidIndicator.classList.add('is-visible');
+  liquidIndicator.classList.add("visible");
 
-  // Only suppress V18.1's static active background AFTER the moving pill
-  // has a valid size/position. If this ever fails, V18.1 remains visible.
   if(linkRect.width>0 && linkRect.height>0){
-    topnav.classList.add('indicator-ready');
-    indicatorReady=true;
+    navBar.classList.add("indicator-ready");
   }
 
   if(instant){
     requestAnimationFrame(()=>requestAnimationFrame(()=>
-      liquidIndicator.classList.remove('no-motion')
+      liquidIndicator.classList.remove("no-motion")
     ));
   }
 }
-function updateActiveNav(){
-  let current='home';
 
-  // At the bottom of the page, force the final section active.
-  // This fixes Contact never becoming active when the viewport is
-  // taller than the remaining Contact/footer content.
-  const nearBottom =
+function updateActiveNav(){
+  let current=sections[0]?.id || "home";
+
+  const nearBottom=
     window.innerHeight + window.scrollY >=
     document.documentElement.scrollHeight - 8;
 
-  if (nearBottom && sections.length) {
-    current = sections[sections.length - 1].id;
-  } else {
+  if(nearBottom && sections.length){
+    current=sections[sections.length-1].id;
+  }else{
     sections.forEach(s=>{
-      if(window.scrollY >= s.offsetTop - 140) current=s.id;
+      if(window.scrollY>=s.offsetTop-135) current=s.id;
     });
   }
 
   let activeLink=null;
-  nav.forEach(a=>{
-    const active=a.getAttribute('href')==='#'+current;
-    a.classList.toggle('active',active);
+  navLinks.forEach(a=>{
+    const active=a.getAttribute("href")==="#"+current;
+    a.classList.toggle("active",active);
     if(active) activeLink=a;
   });
+
   positionLiquidIndicator(activeLink);
 }
 
-window.addEventListener('scroll',updateActiveNav,{passive:true});
-window.addEventListener('resize',()=>{
+window.addEventListener("scroll",updateActiveNav,{passive:true});
+window.addEventListener("resize",()=>{
   updateActiveNav();
-  const activeLink=nav.find(a=>a.classList.contains('active'));
-  positionLiquidIndicator(activeLink,true);
+  positionLiquidIndicator(navLinks.find(a=>a.classList.contains("active")),true);
 },{passive:true});
+
 updateActiveNav();
 requestAnimationFrame(()=>{
-  const activeLink=nav.find(a=>a.classList.contains('active'));
-  positionLiquidIndicator(activeLink,true);
+  positionLiquidIndicator(navLinks.find(a=>a.classList.contains("active")),true);
 });
