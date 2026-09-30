@@ -420,3 +420,34 @@ body{
     line-height:1 !important;
   }
 }
+
+
+/* =========================================================
+   TEST v7 — WIDER ACTIVE + HOVER PILLS
+   Match the roomier proportions of Pradip's navbar.
+   The moving indicator measures the anchor itself, so active
+   and hover states automatically stay the exact same size.
+   ========================================================= */
+@media (min-width:901px){
+  .links a[href^="#"]:not(.resume-nav){
+    min-height:42px !important;
+    padding:0 18px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    box-sizing:border-box !important;
+    border-radius:16px !important;
+  }
+
+  .at-liquid-indicator{
+    border-radius:16px !important;
+  }
+
+  /* Hover uses the same anchor box dimensions as the active pill. */
+  .links a[href^="#"]:not(.resume-nav):not(.active):hover,
+  .links a[href^="#"]:not(.resume-nav):not(.active):focus-visible{
+    min-height:42px !important;
+    padding:0 18px !important;
+    border-radius:16px !important;
+  }
+}
