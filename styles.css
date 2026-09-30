@@ -224,3 +224,36 @@ body{
 @media(prefers-reduced-motion:reduce){
   .at-liquid-indicator{transition:opacity 120ms ease}
 }
+
+
+/* =========================================================
+   LIQUID GLASS TEST v2 — initial-load polish
+   ========================================================= */
+@media (min-width:901px){
+  .at-liquid-indicator{
+    opacity:0;
+    background:
+      linear-gradient(135deg,
+        rgba(45, 194, 164, .68),
+        rgba(15, 126, 108, .54)) !important;
+    border:1px solid rgba(184,255,240,.28) !important;
+    box-shadow:
+      0 8px 24px rgba(18,185,153,.16),
+      inset 0 1px 0 rgba(255,255,255,.22),
+      inset 0 -1px 0 rgba(8,72,62,.12) !important;
+    backdrop-filter:blur(20px) saturate(175%) !important;
+    -webkit-backdrop-filter:blur(20px) saturate(175%) !important;
+  }
+
+  /* First valid position: softly reveal instead of popping in. */
+  .at-liquid-indicator.visible{
+    opacity:1;
+  }
+
+  /* Keep nav text crisp over the glass pill. */
+  .nav.indicator-ready .links a[href^="#"].active,
+  .nav.indicator-ready .links a[href^="#"].active:hover{
+    color:#07110f !important;
+    text-shadow:0 1px 0 rgba(255,255,255,.12);
+  }
+}

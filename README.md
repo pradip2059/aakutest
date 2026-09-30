@@ -11,3 +11,9 @@ Changes:
 - Preserves existing reveal and hover behavior with refined glass depth.
 - Fixes Contact active state at the bottom of the page.
 - No production CNAME; noindex/nofollow enabled.
+
+## TEST v2
+- Refined desktop/tablet active pill to darker translucent emerald glass.
+- First refresh positions the pill before revealing it, reducing the initial solid-block pop.
+- Existing 520 ms liquid sliding behavior is unchanged after initialization.
+- Mobile behavior remains unchanged.

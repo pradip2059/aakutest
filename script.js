@@ -64,5 +64,14 @@ window.addEventListener("resize",()=>{
   moveIndicator(navLinks.find(a=>a.classList.contains("active")),true);
 },{passive:true});
 
-updateActiveNav();
-requestAnimationFrame(()=>moveIndicator(navLinks.find(a=>a.classList.contains("active")),true));
+/* Initial-load polish: establish geometry before revealing the liquid pill. */
+const initialActive=navLinks.find(a=>a.classList.contains("active"));
+if(liquidIndicator) liquidIndicator.classList.remove("visible");
+moveIndicator(initialActive,true);
+if(liquidIndicator) liquidIndicator.classList.remove("visible");
+
+requestAnimationFrame(()=>{
+  requestAnimationFrame(()=>{
+    updateActiveNav();
+  });
+});
