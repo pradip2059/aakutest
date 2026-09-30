@@ -1,11 +1,10 @@
-# Aakanshya Portfolio — Clean Liquid Nav TEST v4 FIXED
+# Aakanshya Portfolio — Clean Liquid Nav TEST v5
 
-Fixes the missing green navigator from TEST v3.
+Layering fix for the v4 screenshot.
 
-Root cause fixed:
-- Removed Pradip-specific `topnav` / `nav` JavaScript references.
-- Uses Aakanshya's actual `navBar` / `navLinks` variables.
-- Uses the `visible` class expected by Aakanshya's CSS.
-- Keeps the 520 ms liquid sliding movement.
-- Clean text at rest and emerald hover glass remain.
-- Test-only; production domain untouched.
+- Green liquid indicator remains visible and smooth.
+- Indicator is now BEHIND the navigation text, not on top of it.
+- Nav text remains fully crisp/readable.
+- Clean text at rest and emerald hover capsule retained.
+- 520 ms liquid movement retained.
+- Test-only; aakanshyathapa.com untouched.

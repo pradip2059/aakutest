@@ -362,3 +362,38 @@ body{
     border-radius:14px !important;
   }
 }
+
+
+/* =========================================================
+   TEST v5 — INDICATOR LAYER FIX
+   The v4 pill was above the text. Put the glass behind the
+   navbar content, matching the proven Pradip V18.3 layering.
+   ========================================================= */
+@media (min-width:901px){
+  .nav{
+    overflow:visible !important;
+  }
+
+  .nav-inner{
+    position:relative !important;
+    z-index:2 !important;
+  }
+
+  .at-liquid-indicator{
+    z-index:1 !important;
+    pointer-events:none !important;
+  }
+
+  .links,
+  .links a{
+    position:relative !important;
+    z-index:3 !important;
+  }
+
+  .nav.indicator-ready .links a[href^="#"].active,
+  .nav.indicator-ready .links a[href^="#"].active:hover{
+    color:#07110f !important;
+    opacity:1 !important;
+    text-shadow:none !important;
+  }
+}
