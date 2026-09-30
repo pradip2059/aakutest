@@ -1,19 +1,12 @@
-# Aakanshya Thapa Portfolio — Liquid Glass TEST
+# Aakanshya Portfolio — Clean Liquid Nav TEST v3
 
-Test-only build based directly on the uploaded aaku production repository.
+Based on the latest Aakanshya liquid-glass build.
 
-Changes:
-- Preserves the charcoal / emerald / gold theme and all existing content.
-- Adds translucent liquid-glass cards, controls, tags, and floating navigation.
-- Adds a smooth shared emerald active-nav indicator on desktop/tablet.
-- Adds tablet navigation compaction.
-- Adds a more opaque glass mobile menu.
-- Preserves existing reveal and hover behavior with refined glass depth.
-- Fixes Contact active state at the bottom of the page.
-- No production CNAME; noindex/nofollow enabled.
-
-## TEST v2
-- Refined desktop/tablet active pill to darker translucent emerald glass.
-- First refresh positions the pill before revealing it, reducing the initial solid-block pop.
-- Existing 520 ms liquid sliding behavior is unchanged after initialization.
-- Mobile behavior remains unchanged.
+- Restores the emerald moving active-section bar/pill.
+- Uses the same clean-nav concept as Pradip V18.4: text only at rest.
+- Subtle emerald glass capsule appears only on hover/focus.
+- Active emerald pill uses the smooth 520 ms liquid glide.
+- Resume remains an outlined action button.
+- Existing charcoal / emerald / gold theme preserved.
+- Mobile behavior preserved.
+- TEST ONLY: CNAME/canonical/sitemap removed; noindex/nofollow enabled.
